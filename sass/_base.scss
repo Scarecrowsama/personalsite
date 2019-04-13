@@ -1,0 +1,65 @@
+$font-primary: 'Quicksand', sans-serif;
+$font-secondary: 'Montserrat', sans-serif;
+
+$color-yellow: #ffce00;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-secondary;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.white {
+  color: #fff;
+}
+
+.html5 {
+  color: #e34f26;
+}
+
+.css3 {
+  color: #3B5998;
+}
+
+.javascript {
+  color: #f7df1e;
+}
+
+.sass {
+  color: #c69;
+}
+
+.mongodb {
+  color: #589636;
+}
+
+.nodejs {
+  color: #215732;
+}
+
+.arrow {
+  color: #00a8e0;
+}

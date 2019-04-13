@@ -1,0 +1,251 @@
+.content {
+  display: flex;
+  min-height: 68vh;
+  position: relative;
+  z-index: 10;
+
+  @media only screen and(max-width: 41em) {
+    flex-direction: column;
+  }
+
+  &__left {
+    flex: 1 1 50vw;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+
+    @media only screen and(max-width: 41em) {
+      justify-content: center;
+      align-items: flex-end;
+      flex: 1 1 55vw;
+    }
+
+    @media only screen and(max-width: 28em) {
+      flex-basis: 65vw;
+    }
+  }
+
+  &__span {
+    position: relative;
+
+    // &::before,
+    // &::after {
+    //   content: '';
+    //   height: 1rem;
+    //   width: 100vw;
+    //   background-color: #fff;
+    //   position: absolute;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    // }
+
+    // &::before {
+    //   left: -100vw;
+    // }
+  }
+
+  &__photo {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 1rem solid #fff;
+    position: relative;
+    background-color: #fff;
+
+    @media only screen and(max-width: 28em) {
+      transform: translateY(4rem); 
+    }
+  }
+
+  &__right {
+    flex: 1 1 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @media only screen and(max-width: 41em) {
+      flex: 1 1 45vw;
+    }
+  }
+
+  &__headings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 7rem;
+    margin-top: 3rem;
+
+    @media only screen and(max-width: 50em) {
+      margin-right: 3rem;
+      margin-top: 5rem; 
+    }
+
+    @media only screen and(max-width: 41em) {
+      align-items: center;
+      margin: 2rem 0 0 2rem;
+    }
+
+    @media only screen and(max-width: 28em) {
+      margin-top: 4rem; 
+    }
+  }
+
+  &__heading {
+    text-transform: uppercase;
+
+    &--1 {
+
+      font-size: 7rem;
+      margin: 1rem 2rem 0 0;
+      text-align: right;
+
+      @media only screen and (max-width: 75em) {
+        font-size: 5rem;
+      }
+
+      @media only screen and(max-width: 62.5em) {
+        font-size: 3rem;
+      }
+
+      @media only screen and(max-width: 50em) {
+        font-size: 2.8rem;
+      }
+
+      @media only screen and(max-width: 41em) {
+        text-align: center;
+        font-size: 5rem;
+      }
+
+      @media only screen and(max-width: 28em) {
+        font-size: 3rem;
+      }
+    }
+
+  }
+
+  &__intro {
+    color: #000;
+    margin-top: 3.5rem;
+    padding-left: 5rem;
+    text-align: justify;
+    line-height: 2rem;
+
+    @media only screen and(max-width: 75em) {
+      margin-top: 6rem;
+    }
+
+    @media only screen and(max-width: 62.5em) {
+      font-size: 1.2rem;
+      padding-left: 7rem;
+      margin-top: 7rem;
+    }
+
+    @media only screen and(max-width: 50em) {
+      font-size: 1rem;
+      padding-left: 3rem;
+      margin-right: 3rem;
+    }
+
+    @media only screen and(max-width: 41em) {
+      margin-top: 4rem;
+    }
+  }
+}
+
+.cta-buttons {
+  min-height: 12vh;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 7rem;
+  z-index: 10;
+
+  &__buttons {
+    
+    @media only screen and(max-width: 31.25em) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+  }
+
+  @media only screen and(max-width: 50em) {
+    margin-right: 5rem;   
+  }
+
+  @media only screen and(max-width: 41em) {
+   justify-content: center; 
+   align-items: center;
+   margin-right: 0;
+  }
+}
+
+.cta-btn {
+
+  &:not(:last-child) {
+    margin-right: 3rem;
+
+    @media only screen and(max-width: 62.5em) {
+      margin-right: 2rem;
+    }
+
+    @media only screen and(max-width: 50em) {
+      margin-right: 1.5rem;
+    }
+
+    @media only screen and(max-width: 31.25em) {
+      margin-right: 0;
+    }
+  }
+
+  span {
+    color: $color-yellow;
+  }
+
+  @media only screen and(max-width: 31.25em) {
+    margin-top: 1.5rem;
+    width: 200%;
+    text-align: center;
+  }
+}
+
+.cta-btn:link,
+.cta-btn:visited {
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+  background-color: #fff;
+  border-radius: 20px;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  transition: all .3s ease-in-out;
+
+  @media only screen and(max-width: 75em) {
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+  }
+
+  @media only screen and(max-width: 75em) {
+    font-size: 1rem;
+    padding: 1rem 2rem;   
+  }
+
+  @media only screen and(max-width: 50em) {
+    font-size: .8rem;
+    padding: .7rem 1.5rem;
+
+    @media only screen and(max-width: 31.25em) {
+      font-size: 1rem;
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+.cta-btn:hover,
+.cta-btn:active {
+  background-color: #fff;
+  color: #000;
+}
