@@ -404,6 +404,9 @@ h1 {
     font-size: 2.5rem;
     color: #333;
     margin: 0.5rem 0; }
+    @media only screen and (max-width: 28em) {
+      .card__title {
+        font-size: 2rem; } }
   .card__subtitle {
     color: #777;
     font-size: 1.5rem;
