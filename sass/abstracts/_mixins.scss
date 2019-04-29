@@ -1,0 +1,13 @@
+@mixin basic-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+}
+
+@mixin basic-link-hover {
+  background-color: #fff;
+  color: #000;
+}

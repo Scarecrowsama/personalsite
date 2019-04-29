@@ -1,3 +1,27 @@
+.white {
+  color: #fff; }
+
+.html5 {
+  color: #e34f26; }
+
+.css3 {
+  color: #3B5998; }
+
+.javascript {
+  color: #f7df1e; }
+
+.sass {
+  color: #c69; }
+
+.mongodb {
+  color: #589636; }
+
+.nodejs {
+  color: #215732; }
+
+.arrow {
+  color: #00a8e0; }
+
 *,
 *::before,
 *::after {
@@ -22,29 +46,8 @@ a {
 li {
   list-style: none; }
 
-.white {
-  color: #fff; }
-
-.html5 {
-  color: #e34f26; }
-
-.css3 {
-  color: #3B5998; }
-
-.javascript {
-  color: #f7df1e; }
-
-.sass {
-  color: #c69; }
-
-.mongodb {
-  color: #589636; }
-
-.nodejs {
-  color: #215732; }
-
-.arrow {
-  color: #00a8e0; }
+h1 {
+  font-family: "Quicksand", sans-serif; }
 
 .container {
   overflow-x: hidden; }
@@ -90,9 +93,6 @@ li {
     .footer {
       padding: 2rem 0; } }
 
-h1 {
-  font-family: "Quicksand", sans-serif; }
-
 .header {
   display: flex;
   justify-content: flex-end;
@@ -137,21 +137,21 @@ h1 {
   display: none; }
 
 .social-links__link:link, .social-links__link:visited {
-  padding: 1rem 2.5rem;
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
   background-color: #000;
   color: #fff;
-  display: block;
   border-radius: 20px;
+  display: block;
+  padding: 1rem 2.5rem;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   transition: all .7s ease-in-out; }
 
 .social-links__link:hover, .social-links__link:active {
-  transform: translateY(-2px) scale(1.05);
   background-color: #fff;
-  color: #000; }
+  color: #000;
+  transform: translateY(-2px) scale(1.05); }
   .social-links__link:hover .social-links__link--hidden, .social-links__link:active .social-links__link--hidden {
     display: inline;
     color: #000; }
@@ -306,13 +306,12 @@ h1 {
 .cta-btn:link,
 .cta-btn:visited {
   font-size: 1.5rem;
-  padding: 1rem 4rem;
-  background-color: #fff;
-  border-radius: 20px;
+  font-weight: 700;
   text-transform: uppercase;
   background-color: #000;
   color: #fff;
-  font-weight: 700;
+  border-radius: 20px;
+  padding: 1rem 4rem;
   transition: all .3s ease-in-out; }
   @media only screen and (max-width: 75em) {
     .cta-btn:link,
@@ -338,7 +337,8 @@ h1 {
 .cta-btn:hover,
 .cta-btn:active {
   background-color: #fff;
-  color: #000; }
+  color: #000;
+  border: 2px solid #000; }
 
 .portfolio__heading {
   text-align: center;
@@ -406,7 +406,7 @@ h1 {
     margin: 0.5rem 0; }
     @media only screen and (max-width: 28em) {
       .card__title {
-        font-size: 2rem; } }
+        font-size: 1.75rem; } }
   .card__subtitle {
     color: #777;
     font-size: 1.5rem;

@@ -61,23 +61,17 @@
 
   &__link:link,
   &__link:visited {
-    padding: 1rem 2.5rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: #000;
-    color: #fff;
+    @include basic-link;
     display: block;
-    border-radius: 20px;
+    padding: 1rem 2.5rem;
     box-shadow: 0 5px 5px rgba(#000, .5);
     transition: all .7s ease-in-out;
   }
 
   &__link:hover,
   &__link:active {
+    @include basic-link-hover;
     transform: translateY(-2px) scale(1.05);
-    background-color: #fff;
-    color: #000;
 
     .social-links__link--hidden {
       display: inline;

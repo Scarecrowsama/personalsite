@@ -27,21 +27,6 @@
 
   &__span {
     position: relative;
-
-    // &::before,
-    // &::after {
-    //   content: '';
-    //   height: 1rem;
-    //   width: 100vw;
-    //   background-color: #fff;
-    //   position: absolute;
-    //   top: 50%;
-    //   transform: translateY(-50%);
-    // }
-
-    // &::before {
-    //   left: -100vw;
-    // }
   }
 
   &__photo {
@@ -213,14 +198,8 @@
 
 .cta-btn:link,
 .cta-btn:visited {
-  font-size: 1.5rem;
+  @include basic-link;
   padding: 1rem 4rem;
-  background-color: #fff;
-  border-radius: 20px;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  font-weight: 700;
   transition: all .3s ease-in-out;
 
   @media only screen and(max-width: 75em) {
@@ -246,6 +225,6 @@
 
 .cta-btn:hover,
 .cta-btn:active {
-  background-color: #fff;
-  color: #000;
+  @include basic-link-hover;
+  border: 2px solid #000;
 }
