@@ -11,3 +11,31 @@
   background-color: #fff;
   color: #000;
 }
+
+@mixin responsive-75em {
+  @media only screen and(max-width: 75em) { @content };
+}
+
+@mixin responsive-625em {
+  @media only screen and(max-width: 62.5em) { @content };
+}
+
+@mixin responsive-50em {
+  @media only screen and(max-width: 50em) { @content };
+}
+
+@mixin responsive-41em {
+  @media only screen and(max-width: 41em) { @content };
+}
+
+@mixin responsive-375em {
+  @media only screen and(max-width: 37.5em) { @content };
+}
+
+@mixin responsive-3125em {
+  @media only screen and(max-width: 31.25em) { @content };
+}
+
+@mixin responsive-28em {
+  @media only screen and(max-width: 28em) { @content };
+}

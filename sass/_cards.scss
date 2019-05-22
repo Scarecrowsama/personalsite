@@ -5,11 +5,11 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  @media only screen and(max-width: 50em) {
+  @include responsive-50em {
     padding-top: 5rem;
   }
 
-  @media only screen and(max-width: 28em) {
+  @include responsive-28em {
     padding: 4rem;   
   }
 }
@@ -35,7 +35,7 @@
     color: #333;
     margin: 0.5rem 0;
 
-    @media only screen and(max-width: 28em) {
+    @include responsive-28em {
       font-size: 1.75rem;   
     }
   }
